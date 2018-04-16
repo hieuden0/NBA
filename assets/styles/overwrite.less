@@ -1,0 +1,118 @@
+html, body {
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+  }
+  .swiper-player {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #0000;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+    position: sticky;
+}
+
+
+pre {
+  tab-size: 8;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+  position: relative;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .side-collapse-container{
+      width:100%;
+      position:relative;
+      left:0;
+      transition:left .4s;
+  }
+  .side-collapse-container.out{
+      left:200px;
+  }
+  .side-collapse {
+      top:50px;
+      bottom:0;
+      left:0;
+      width:200px;
+      position:fixed;
+      overflow:hidden;
+      transition:width .4s;
+  }
+  .side-collapse.in {
+      width:0;
+  }
+}
+
+.banner{
+  background-color: #fff;
+  z-index: 2;
+  // height: 55vh;
+}
+
+.w-10{
+  width: 100%;
+}
+
+.custom-tabs {
+  background: none repeat scroll 0 0 #09c;
+  flex-direction: row;
+  display: flex;
+}
+
+.nav-tabs > li{
+  flex: 1;
+}
+
+.custom-tabs > li > a{
+   color:#fff;
+   font-size:13px;
+   border-radius:0;
+   border:none;
+   margin:0;
+}
+
+.custom-tabs > li > a:hover{
+  color: #000;
+  background: none repeat scroll 0 0 #09c;
+}
+.custom-tabs > li.active > a,
+.custom-tabs > li.active > a:hover,
+.custom-tabs > li.active > a:focus {
+  border-bottom: 3px solid #09c;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
